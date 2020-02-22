@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/navbar.js';
-import CheckingAccount from './components/checkingAccount.js';
+import CheckingAccount from './components/checkingAccount/checkingAccount.js';
 
 function App() {
   return (
