@@ -1,7 +1,6 @@
 import React from 'react';
 
 function PendingTransactions(props) {
-  console.log(props.pendingTransData)
   return (
     <tr>
       <td>{props.date} </td>
