@@ -1,0 +1,47 @@
+[33mcommit 3c26a30ea75db29b11d96772f8299c50c26ea941[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 16:58:03 2020 -0800
+
+    mapped pending transactions.  requires styling.
+
+[33mcommit cbe156d7b5ddbfd95f9f066c26d6c0a6effbd749[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 13:12:46 2020 -0800
+
+    hard code transactions component to include pagination.
+
+[33mcommit b09be278e9c187c5b97a875744ff25d896e4e5ef[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 13:05:04 2020 -0800
+
+    hard code pending transactions component.
+
+[33mcommit fda027608fd26e2fd1bf592c71356cdf5ded3f92[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 13:00:26 2020 -0800
+
+    hard code transaction serach component.
+
+[33mcommit c1b0e6ff6785ba4c8f525da5d0cf8f1b42c7fe0e[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 11:59:47 2020 -0800
+
+    hard code navigation to checking account.  not linked.
+
+[33mcommit 2b243b41afedcdca8a0a3fda7a4374b986143249[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 11:21:12 2020 -0800
+
+    add material-ui, and simple app bar.
+
+[33mcommit e83c4e27b7e5e7bae08ab89cc8bb8302b022ac0c[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 10:22:54 2020 -0800
+
+    hard code components for checking account.
+
+[33mcommit 6effd6c90595b96359049d503b990a98dd17cf43[m
+Author: Daniel Lagos <lagos.d@gmail.com>
+Date:   Sat Feb 22 09:25:58 2020 -0800
+
+    Initialize project using Create React App

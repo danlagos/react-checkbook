@@ -6,7 +6,7 @@ function PendingTransactions(props) {
     <div className="App">
       <div>
         <p>Date: {props.date} </p>
-        <p>transaction {props.transaction}</p>
+        <p>Transaction {props.transaction}</p>
         <p>Amount: {props.amount}</p>
       </div>
     </div>
