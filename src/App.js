@@ -7,9 +7,7 @@ class App extends Component {
     return (
       <div className="App" >
         <Navbar />
-        <h1> entry point </h1>
         <CheckingAccount />
-
       </div>
     );
   }

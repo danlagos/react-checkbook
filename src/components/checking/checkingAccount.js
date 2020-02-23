@@ -9,7 +9,7 @@ class CheckingAccount extends Component {
     pendingTransData: [
       { id: 0, date: '1 / 1 / 2020', income: false, transaction: "gas", amount: 25.45 },
       { id: 1, date: '1 / 2 / 2020', income: false, transaction: "cell phone", amount: 127.35 },
-      { id: 2, date: '1 / 3 / 2020', income: false, transaction: "car payment", amount: 303.97 },
+      { id: 2, date: '1 / 3 / 2020', income: false, transaction: "car payment", amount: 303.97, },
     ]
   }
   render() {
@@ -18,6 +18,13 @@ class CheckingAccount extends Component {
     transData = (
       <div>
         <h1>PendingTransactions</h1>
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Transaction</th>
+            <th>Amount</th>
+          </tr>
+        </table>
         {this.state.pendingTransData.map((pendingTransData, index) => {
           return <PendingTransactions
             key={pendingTransData.id}
