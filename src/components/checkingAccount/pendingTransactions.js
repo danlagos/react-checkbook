@@ -1,14 +1,13 @@
 import React from 'react';
 
-
-function PendingTransactions() {
+function PendingTransactions(props) {
+  console.log(props.pendingTransData)
   return (
     <div className="App">
-      <h1> Pending Transactions Component</h1>
       <div>
-        <p>Date</p> <p>add date props</p>
-        <p>transaction</p> <p>add pendingTransaction props</p>
-        <p>Amount</p> <p>add amount props</p>
+        <p>Date: {props.date} </p>
+        <p>transaction {props.transaction}</p>
+        <p>Amount: {props.amount}</p>
       </div>
     </div>
   );
