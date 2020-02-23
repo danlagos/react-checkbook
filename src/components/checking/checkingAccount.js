@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+
 import TransactionSearch from './transactionSearch.js';
 import PendingTransactions from './pendingTransactions.js';
 import Transactions from './transactions.js';
 
-class CheckingAccount2 extends Component {
+class CheckingAccount extends Component {
   state = {
     pendingTransData: [
       { id: 0, date: '1 / 1 / 2020', income: false, transaction: "gas", amount: 25.45 },
@@ -16,9 +17,10 @@ class CheckingAccount2 extends Component {
 
     transData = (
       <div>
+        <h1>PendingTransactions</h1>
         {this.state.pendingTransData.map((pendingTransData, index) => {
           return <PendingTransactions
-            id={pendingTransData.id}
+            key={pendingTransData.id}
             date={pendingTransData.date}
             income={pendingTransData.income}
             transaction={pendingTransData.transaction}
@@ -29,7 +31,7 @@ class CheckingAccount2 extends Component {
 
     return (
       <div className="App" >
-        <h1> Checking Account 2 </h1>
+        <h1> Checking Account</h1>
         <TransactionSearch />
         {transData}
         <Transactions />
@@ -38,4 +40,4 @@ class CheckingAccount2 extends Component {
   }
 }
 
-export default CheckingAccount2;
+export default CheckingAccount;

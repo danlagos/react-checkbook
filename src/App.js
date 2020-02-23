@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/navbar.js';
-// import CheckingAccount from './components/checkingAccount/checkingAccount.js';
-import CheckingAccount2 from './components/checkingAccount/checkingAccount2.js'
+import CheckingAccount from './components/checking/checkingAccount.js';
 
 class App extends Component {
   render() {
@@ -9,7 +8,7 @@ class App extends Component {
       <div className="App" >
         <Navbar />
         <h1> entry point </h1>
-        <CheckingAccount2 />
+        <CheckingAccount />
 
       </div>
     );
