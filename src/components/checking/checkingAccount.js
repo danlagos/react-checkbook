@@ -13,59 +13,43 @@ class CheckingAccount extends Component {
       { id: 2, date: '1/3/2020', transaction: "car payment", amount: -303.97, },
     ],
     transactionData: [
-      {
-        id: 0,
-        date: '1/1/2020',
-        transaction: "gas",
-        amount: -35.45,
-        runningTotal: 0
-      },
-      {
-        id: 1,
-        date: '1/2/2020',
-        transaction: "cell phone",
-        amount: -227.35,
-        runningTotal: 0
-      },
-      {
-        id: 2,
-        date: '1/3/2020',
-        transaction: "car payment",
-        amount: -403.97,
-        runningTotal: 0
-      },
     ]
   }
 
+  sortByDate() {
+    let { transactionData } = this.state
+    let newTransactionData = transactionData
+
+    newTransactionData.sort((a, b) => a.date > b.date)
+
+    this.setState({transactionData: newTransactionData})
+  };
+
   addRunningTotal() {
     let { transactionData, startBal } = this.state
-
-    console.log('start Balance: ', startBal);
     let prevAmount, running;
+
     transactionData.map((el, i) => {
       if (i === 0) {
         running = el.runningTotal = el.amount + startBal;
         prevAmount = el.runningTotal;
 
-        console.log(running.toFixed(2))
         return running;
       } else if (i > 0) {
         running = el.runningTotal = prevAmount + el.amount;
         prevAmount = el.runningTotal;
 
-        console.log(running.toFixed(2))
         return running;
       }
     });
-    console.log('out of map function')
-    console.log(transactionData);
 
     this.setState({ transactionData: transactionData, startBal: startBal });
   };
 
   componentDidMount() {
+    this.sortByDate()
     this.addRunningTotal()
-  }
+  };
 
   render() {
     let pendTransData = (
